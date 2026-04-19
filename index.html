@@ -31,8 +31,9 @@
       display: flex; justify-content: space-between; align-items: center;
       position: sticky; top: 0; z-index: 100;
     }
-    .nav-brand { color: var(--gold); font-size: 1.1rem; font-weight: 700; letter-spacing: .06em; text-decoration: none; font-family: 'Manrope', sans-serif; }
-    .nav-brand span { color: #fff; font-weight: 400; }
+    .nav-brand { display: flex; flex-direction: column; align-items: flex-start; text-decoration: none; line-height: 1; gap: 3px; }
+    .nav-brand .logo-name { font-family: 'Manrope', sans-serif; font-weight: 800; font-size: 1.45rem; color: var(--gold); letter-spacing: -.01em; }
+    .nav-brand .logo-farm { font-family: 'Manrope', sans-serif; font-weight: 500; font-size: .52rem; color: var(--gold); letter-spacing: .32em; text-transform: uppercase; padding-left: 2px; opacity: .85; }
     .nav-cta { background: transparent; color: var(--gold); border: 1.5px solid var(--gold); padding: 8px 22px; border-radius: 4px; text-decoration: none; font-size: .88rem; font-weight: 600; transition: background .2s, color .2s; font-family: 'Manrope', sans-serif; letter-spacing: .04em; }
     .nav-cta:hover { background: var(--gold); color: var(--green); }
 
@@ -252,17 +253,23 @@
     .final-note { font-size: .85rem; opacity: .55; margin-top: 18px; font-style: italic; }
 
     /* ── FOOTER ── */
-    footer { background: var(--sage); color: rgba(255,255,255,.55); text-align: center; padding: 28px 24px; font-size: .82rem; font-family: 'Manrope', sans-serif; }
+    footer { background: var(--sage); color: rgba(255,255,255,.55); text-align: center; padding: 36px 24px 28px; font-size: .82rem; font-family: 'Manrope', sans-serif; }
     footer strong { color: var(--gold); }
     footer a { color: rgba(239,228,174,.5); text-decoration: none; margin: 0 10px; }
     footer a:hover { color: var(--gold); }
+    .footer-logo { display: inline-flex; flex-direction: column; align-items: center; text-decoration: none; line-height: 1; gap: 3px; margin-bottom: 18px; }
+    .footer-logo .logo-name { font-family: 'Manrope', sans-serif; font-weight: 800; font-size: 1.8rem; color: var(--gold); letter-spacing: -.01em; }
+    .footer-logo .logo-farm { font-family: 'Manrope', sans-serif; font-weight: 500; font-size: .6rem; color: var(--gold); letter-spacing: .32em; text-transform: uppercase; opacity: .85; }
   </style>
 </head>
 <body>
 
 <!-- NAV -->
 <nav>
-  <a href="https://www.hopecotefarm.com" target="_blank" rel="noopener" class="nav-brand">Hopecote <span>Farm</span></a>
+  <a href="https://www.hopecotefarm.com" target="_blank" rel="noopener" class="nav-brand">
+    <span class="logo-name">hopecote</span>
+    <span class="logo-farm">farm</span>
+  </a>
   <a href="https://www.inherelement.co/store/p/summer-camp-2026" target="_blank" rel="noopener" class="nav-cta">Register Now</a>
 </nav>
 
@@ -601,6 +608,10 @@
 
 <!-- FOOTER -->
 <footer>
+  <a href="https://www.hopecotefarm.com" target="_blank" rel="noopener" class="footer-logo">
+    <span class="logo-name">hopecote</span>
+    <span class="logo-farm">farm</span>
+  </a><br>
   <strong>Hopecote Farm Summer Camp</strong> · Springfield, Tennessee 37172<br>
   May 25 – August 14, 2026 &nbsp;·&nbsp; Ages 4–14 &nbsp;·&nbsp; $175/week<br>
   <div style="margin-top:12px;">
@@ -611,7 +622,6 @@
     <a href="https://www.inherelement.co/store/p/summer-camp-2026" target="_blank" rel="noopener">Register</a>
     <a href="mailto:hello@inherelement.co">Contact</a>
   </div>
-  <div style="margin-top:12px;"><a href="https://www.hopecotefarm.com" target="_blank" rel="noopener" style="color:rgba(239,228,174,.6);font-size:.8rem;">← Back to HopecoteFarm.com</a></div>
   <div style="margin-top:8px;opacity:.4;font-size:.75rem;">© 2026 Hopecote Farm · Balduf Green Family · All Rights Reserved</div>
 </footer>
 
