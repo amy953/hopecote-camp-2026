@@ -216,6 +216,29 @@
 
     /* ── PRICING ── */
     .pricing-section { background: #fff; }
+
+    /* ── BEFORE & AFTER CARE ── */
+    .care-section { background: var(--green); padding: 60px 24px; }
+    .care-section .eyebrow { color: var(--gold); }
+    .care-section h2.headline { color: #fff; }
+    .care-section .section-intro { color: rgba(255,255,255,.78); }
+    .care-row { display: grid; grid-template-columns: 1fr 1fr; gap: 24px; margin-bottom: 28px; }
+    @media(max-width:640px) { .care-row { grid-template-columns: 1fr; } }
+    .care-card { background: rgba(255,255,255,.07); border: 1.5px solid rgba(239,228,174,.25); border-radius: 12px; padding: 32px 28px; text-align: center; }
+    .care-card h4 { font-family: 'Manrope', sans-serif; font-size: 1.1rem; font-weight: 700; color: var(--gold); margin-bottom: 6px; }
+    .care-card .care-time { font-size: .8rem; color: rgba(255,255,255,.55); font-family: 'Manrope', sans-serif; letter-spacing: .08em; margin-bottom: 14px; }
+    .care-card .care-price { font-size: 2.2rem; font-weight: 800; font-family: 'Manrope', sans-serif; color: #fff; line-height: 1; margin-bottom: 4px; }
+    .care-card .care-price sup { font-size: 1rem; vertical-align: top; margin-top: 6px; }
+    .care-card .care-per { font-size: .8rem; color: rgba(255,255,255,.55); font-family: 'Manrope', sans-serif; margin-bottom: 14px; }
+    .care-card p { font-size: .9rem; color: rgba(255,255,255,.72); line-height: 1.6; margin-bottom: 20px; }
+    .care-btn { display: inline-block; padding: 11px 26px; border-radius: 5px; font-family: 'Manrope', sans-serif; font-weight: 700; font-size: .88rem; text-decoration: none; border: 1.5px solid var(--gold); color: var(--gold); transition: background .2s, color .2s; letter-spacing: .03em; }
+    .care-btn:hover { background: var(--gold); color: var(--green); }
+    .care-bundle { background: rgba(239,228,174,.1); border: 1.5px solid rgba(239,228,174,.4); border-radius: 10px; padding: 20px 28px; display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 16px; margin-bottom: 24px; }
+    .care-bundle-text { color: #fff; font-family: 'Manrope', sans-serif; }
+    .care-bundle-text strong { color: var(--gold); font-size: 1.05rem; display: block; margin-bottom: 4px; }
+    .care-bundle-text span { font-size: .88rem; color: rgba(255,255,255,.65); }
+    .care-reminder { background: rgba(239,228,174,.12); border-left: 3px solid var(--gold); border-radius: 4px; padding: 14px 18px; font-size: .9rem; color: rgba(255,255,255,.8); line-height: 1.6; }
+    .care-reminder strong { color: var(--gold); }
     .price-row { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 20px; margin-bottom: 32px; }
     .price-card {
       border-radius: 10px; padding: 30px 28px; text-align: center;
@@ -588,6 +611,43 @@
     <p style="background: var(--green-pale); border-left: 4px solid var(--green); padding: 14px 20px; border-radius: 6px; font-size: .92rem; color: var(--green); margin-bottom: 28px;">
       📋 <strong>A weekly supply list</strong> — including what to pack, what to wear, and lunch guidance — will be sent to all registered families before their first week begins.
     </p>
+  </div>
+</section>
+
+
+<!-- BEFORE & AFTER CARE -->
+<section class="care-section">
+  <div class="container">
+    <p class="eyebrow">Extended Hours</p>
+    <h2 class="headline">Before & After Care Available</h2>
+    <p class="section-intro">For Nashville families facing the morning rush and the evening commute — drop off early and pick up late. We have you covered.</p>
+    <div class="care-row">
+      <div class="care-card">
+        <h4>Before Care</h4>
+        <div class="care-time">7:00 AM – 8:30 AM</div>
+        <div class="care-price"><sup>$</sup>30</div>
+        <div class="care-per">per child · per week</div>
+        <p>Drop off early and head straight to Nashville. Kids arrive to a calm supervised morning — a light snack, outdoor free play, and gentle farm morning chores before camp begins.</p>
+        <a href="https://www.inherelement.co/store/p/before-care-summer-camp" target="_blank" rel="noopener" class="care-btn">Add Before Care →</a>
+      </div>
+      <div class="care-card">
+        <h4>After Care</h4>
+        <div class="care-time">3:30 PM – 5:30 PM</div>
+        <div class="care-price"><sup>$</sup>30</div>
+        <div class="care-per">per child · per week</div>
+        <p>Pick up on your schedule. Kids stay for relaxed afternoon farm time — animal visits, creative free play, and outdoor exploration until you're back from Nashville.</p>
+        <a href="https://www.inherelement.co/store/p/after-care" target="_blank" rel="noopener" class="care-btn">Add After Care →</a>
+      </div>
+    </div>
+    <div class="care-bundle">
+      <div class="care-bundle-text">
+        <strong>Both Before & After Care — $50/week per child</strong>
+        <span>Save $10 when you add both. Register for each separately at checkout.</span>
+      </div>
+    </div>
+    <div class="care-reminder">
+      ⚠️ <strong>Registering for multiple camp weeks?</strong> Add Before Care and/or After Care once per week at checkout — each week requires its own add-on. Links above take you directly to each option.
+    </div>
   </div>
 </section>
 
